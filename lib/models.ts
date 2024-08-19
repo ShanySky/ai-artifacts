@@ -29,7 +29,7 @@ export function getModelClient(model: LLMModel, config: LLMModelConfig) {
 
   const providerConfigs = {
     anthropic: () => createAnthropic({ apiKey })(modelNameString),
-    openai: () => createOpenAI({ apiKey })(modelNameString),
+    openai: () => createOpenAI({ apiKey: apiKey || process.env.OPENAI_API_KEY, baseURL: process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1' })(modelNameString),
     google: () => createGoogleGenerativeAI({ apiKey })(modelNameString),
     mistral: () => createMistral({ apiKey })(modelNameString),
     groq: () => createOpenAI({ apiKey: apiKey || process.env.GROQ_API_KEY, baseURL: 'https://api.groq.com/openai/v1' })(modelNameString),

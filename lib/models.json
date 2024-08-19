@@ -22,6 +22,13 @@
       "hosted": true
     },
     {
+      "id": "claude-3.5-sonnet",
+      "provider": "OpenAI",
+      "providerId": "openai",
+      "name": "Claude 3.5 Sonnet oneapi",
+      "hosted": true
+    },
+    {
       "id": "claude-3-5-sonnet-20240620",
       "provider": "Anthropic",
       "providerId": "anthropic",
