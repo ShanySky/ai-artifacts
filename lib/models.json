@@ -7,7 +7,7 @@
       "name": "GPT-4o"
     },
     {
-      "id": "gpt-4o-mini",
+      "id": "gpt-4o-mini-openai",
       "provider": "OpenAI",
       "providerId": "openai",
       "name": "GPT-4o Mini"
@@ -22,8 +22,13 @@
       "id": "claude-3.5-sonnet",
       "provider": "OpenAI",
       "providerId": "openai",
-      "name": "Claude 3.5 Sonnet oneapi",
-      "hosted": true
+      "name": "Claude 3.5 Sonnet oneapi"
+    },
+    {
+      "id": "deepseek-coder",
+      "provider": "OpenAI",
+      "providerId": "openai",
+      "name": "DeepSeek Coder"
     },
     {
       "id": "claude-3-5-sonnet-20240620",
